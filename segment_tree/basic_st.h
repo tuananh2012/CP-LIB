@@ -47,7 +47,7 @@ public:
     {
         if (l > pos || r < pos)
             return;
-        if (l == r && r == pos)
+        if (l == r)
         {
             st_[id] += val;
         }

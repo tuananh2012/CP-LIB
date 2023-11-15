@@ -7,6 +7,14 @@ cc_library(
                 ]),
 )
 
+cc_binary(
+	name="example",
+	srcs=["main.cpp"],
+	deps=[":cp_lib"],
+	
+)
+
+
 cc_test(
   name = "unit_tests",
   srcs = glob(["test/*.cpp"]),
